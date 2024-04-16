@@ -1,0 +1,69 @@
+.container{
+    background-color: rgb(225, 230, 70);
+    height:max-content;
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.inputarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.intputBox > button{
+    background-color: rgb(131, 78, 29);
+    color:white;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+    box-shadow: 2px 2px rgb(56, 54, 54);
+}
+
+.intputBox > button:hover{
+    background-color: rgb(89, 51, 15);
+    color:white;
+}
+
+.intputBox > input{
+    padding: 10px 10px;
+    border: 3px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(56, 54, 54);
+    
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+.eachTask{
+    text-decoration: none;
+    list-style: none;
+}
+
+.task{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.trash{
+    color:red
+}
+
+.trash:hover{
+    color:rgb(114, 12, 12)
+}
+
+.eachTask{
+    display: flex;
+    justify-content: space-between;
+}
