@@ -11,6 +11,7 @@ const TodoContent = ({newTask, setNewTask, addTask}) => {
                         
                         <input 
                             autoFocus
+                            autoComplete='off'
                             id = "todoInput"
                             type = "text"
                             placeholder = "To Do"

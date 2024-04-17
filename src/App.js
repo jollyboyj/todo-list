@@ -2,6 +2,7 @@ import './App.css';
 import TodoContent from './TodoContent'
 import Header from './Header'
 import Task from './Tasks';
+import Search from './Search'
 import { useState } from 'react';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   )
 
   const [newTask, setNewTask] = useState('')
+  const [search, setSearch] = useState('')
 
     const addTask = (e) => {
         e.preventDefault()
@@ -48,9 +50,16 @@ function App() {
         setNewTask={setNewTask}
         addTask={addTask}
       />
+
+      <Search 
+        Search={Search}
+        setSearch={setSearch}
+      />
       {tasks.length? (
+      
+      
       <Task
-        tasks = {tasks}
+        tasks = {tasks.filter(task => ((task.task).toLowerCase()).includes((search.toLowerCase())))}
         setTasks = {setTasks}
         HandleChecked={HandleChecked}
         HandleDelete = {HandleDelete}
