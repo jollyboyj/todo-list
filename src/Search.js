@@ -4,7 +4,7 @@ import './TodoContent.css'
 
 const Search = ({search, setSearch}) => {
     return(
-        <form className="container" onSubmit={(e)=>e.preventDefault()}> 
+        <form className="Scontainer" onSubmit={(e)=>e.preventDefault()}> 
             <input
                 type="text"
                 className="SearchBox"

@@ -7,12 +7,12 @@
     border-radius: 5px;
 
 }
-.inputarea{
+
+.intputBox{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    
 }
 
 .intputBox > button{
@@ -22,7 +22,7 @@
     padding: 9px 20px;
     border-radius: 5px;
     font-size: 16px;
-    margin-left: 5px;
+    margin-left: 15px;
     box-shadow: 2px 2px rgb(56, 54, 54);
 }
 
@@ -66,8 +66,12 @@
     display: flex;
     justify-content: space-between;
 }
-
+.Scontainer{
+    display: flex;
+    justify-content: center;
+}
 .SearchBox{
+    
     padding: 10px 10px;
     border: none;
     border-radius: 5px;

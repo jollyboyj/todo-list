@@ -1,7 +1,9 @@
+import { useRef } from 'react'
 import './TodoContent.css'
 
 const TodoContent = ({newTask, setNewTask, addTask}) => {
 
+    const inputRef = useRef()
     
     return (
         <div className="container">
@@ -11,6 +13,7 @@ const TodoContent = ({newTask, setNewTask, addTask}) => {
                         
                         <input 
                             autoFocus
+                            ref={inputRef}
                             autoComplete='off'
                             id = "todoInput"
                             type = "text"
@@ -23,6 +26,7 @@ const TodoContent = ({newTask, setNewTask, addTask}) => {
                     
                         <button 
                             type = 'submit'
+                            onClick={() => inputRef.current.focus()}
                         >Add</button>
                     </div>
                 </form>

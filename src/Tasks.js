@@ -6,7 +6,7 @@ import './TodoContent.css'
 const Task = ({tasks, HandleChecked, HandleDelete}) => {
     
     return(
-        <ul>
+        <ul className="container">
             {
                 tasks.map((task) => (
                     <li className='eachTask' key={task.id}>
@@ -17,7 +17,7 @@ const Task = ({tasks, HandleChecked, HandleDelete}) => {
                         />
                         <label 
                             className="task"
-                            style={(task.checked)?{textDecoration: 'line-through'}:null}
+                            style={(task.checked)?{textDecoration: 'line-through',color: 'grey'}:null}
                         >
                             {task.task}
                         </label>
